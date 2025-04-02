@@ -19,6 +19,7 @@ export default function Home() {
       <section className={styles.section}>
         <h1>Next Events</h1>
         <section id="shotgun-events-listing" className={styles.nextEvents}></section>
+        <ShotgunWidget />
       </section>
 
       <section className={styles.section}>

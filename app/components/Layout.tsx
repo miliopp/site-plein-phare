@@ -11,6 +11,15 @@ interface LayoutProps {
   description?: string;
 }
 
+// app/layout.tsx
+export const metadata = {
+  title: 'Plein Phare Records',
+  description: 'Official website of Plein Phare Records',
+  icons: {
+    icon: '/favicon.ico', // ou .png, .svg
+  },
+};
+
 export default function Layout({ children, title = 'Plein Phare Records', description = 'Official website of Plein Phare Records' }: LayoutProps) {
   return (
 	<html>
