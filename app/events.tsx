@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Layout from '../components/Layout';
+import Layout from './components/Layout';
 import styles from '../styles/Index.module.css';
 
 export default function Events() {
