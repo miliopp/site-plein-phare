@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
-import styles from '../styles/Index.module.css';
+import styles from '../../styles/Index.module.css';
 
 import { ReactNode } from 'react';
 
@@ -13,6 +13,8 @@ interface LayoutProps {
 
 export default function Layout({ children, title = 'Plein Phare Records', description = 'Official website of Plein Phare Records' }: LayoutProps) {
   return (
+	<html>
+	<body>
     <div className={styles.container}>
       <Head>
         <title>{title}</title>
@@ -24,5 +26,8 @@ export default function Layout({ children, title = 'Plein Phare Records', descri
       <main className={styles.main}>{children}</main>
 	  <Footer />
     </div>
+  	</body>
+	</html>
+
   );
 }
