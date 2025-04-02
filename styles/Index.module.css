@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.container {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section {
+  margin: 40px 0;
+  padding: 20px;
+  border-top: 1px solid #333;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.socialLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section {
+  margin: 40px 0;
+  padding: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #444;
+}
+
+.nextEvents {
+  --shotgun-foreground: unset !important;
+}
+
+.title{
+    font-size: 2.5em;
+    font-weight: 900;
+}
