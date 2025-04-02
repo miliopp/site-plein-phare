@@ -1,8 +1,10 @@
-import { useEffect } from 'react';
-import Layout from './components/Layout';
-import styles from '../styles/Index.module.css';
+'use client';
 
-export default function Events() {
+import { useEffect } from 'react';
+import Layout from '../components/Layout';
+import styles from '../../styles/Index.module.css';
+
+export default function Page() {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://shotgun.live/widget.js';
