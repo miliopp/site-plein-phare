@@ -1,0 +1,41 @@
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* carré flexible */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image {
+  object-fit: cover; /* 👈 conserve les proportions originales */
+}
+.name {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+}

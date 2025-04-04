@@ -23,8 +23,14 @@ export default function Home() {
       </section>
 
       <section className={styles.section}>
-        <h2>Our Artists</h2>
-        <p>Discover the minds behind the music.</p>
+        <h2>Latest News</h2>
+        <div className={styles.instagramFeed}>
+          <iframe
+            src="https://snapwidget.com/embed/1092429"
+            className={styles.iframe}
+            style={{ width: '100%', height: '500px', border: 'none', overflow: 'hidden' }}
+          ></iframe>
+        </div>
       </section>
 
       <section className={styles.section}>

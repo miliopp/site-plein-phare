@@ -1,0 +1,38 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.socialLinks a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #0070f3;
+}
+
+.soundcloud {
+  margin-top: 20px;
+}
+
+.bookingForm {
+  margin-top: 40px;
+}
+
+.bookingForm input,
+.bookingForm textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.bookingForm button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
