@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
 import styles from '../styles/Index.module.css';
 import ShotgunWidget from './components/ShotgunWidget';
+import InstagramSlider from './components/InstagramSlider';
 
 export default function Home() {
 
@@ -25,11 +26,7 @@ export default function Home() {
       <section className={styles.section}>
         <h2>Latest News</h2>
         <div className={styles.instagramFeed}>
-          <iframe
-            src="https://snapwidget.com/embed/1092429"
-            className={styles.iframe}
-            style={{ width: '100%', height: '500px', border: 'none', overflow: 'hidden' }}
-          ></iframe>
+        <InstagramSlider />
         </div>
       </section>
 
