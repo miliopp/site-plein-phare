@@ -7,7 +7,7 @@ export async function GET() {
   const tokenData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   const token = tokenData.access_token;
 
-  const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink,timestamp,like_count,comments_count&access_token=${token}`;
+  const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,permalink,timestamp,like_count,comments_count&access_token=${token}`;
   const res = await fetch(url);
 
   if (!res.ok) {

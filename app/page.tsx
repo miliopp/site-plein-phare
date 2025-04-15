@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
 import styles from '../styles/Index.module.css';
 import ShotgunWidget from './components/ShotgunWidget';
-import InstagramSlider from './components/InstagramSlider';
+import InstagramSlider from './components/social/InstagramSlider';
+import InstagramFeed from './components/InstagramFeed';
 
 export default function Home() {
 
