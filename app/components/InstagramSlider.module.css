@@ -1,6 +1,6 @@
 .wrapper {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: 1rem 0;
 }
 
@@ -9,10 +9,10 @@
 }
 
 .slide {
-  min-width: 260px;
-  max-width: 320px;
-  aspect-ratio: 1 / 1;
   flex: 1 0 auto;
+  width: 22vw;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
   border-radius: 12px;
   overflow: hidden;
   background: #000;
@@ -22,6 +22,19 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    width: 45vw;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    width: 70vw;
+  }
 }
 
 .slide:hover {
