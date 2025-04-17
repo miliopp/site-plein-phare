@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import styles from './artist.module.css';
 import Layout from '../../components/Layout';
+import Embed from './Embed';
+
 
 export default function ArtistDetail({ artist }: { artist: any }) {
   const socialIcons: { [key: string]: string } = {
@@ -12,11 +14,14 @@ export default function ArtistDetail({ artist }: { artist: any }) {
     spotify: '/icons/spotify.svg',
     beatport: '/icons/beatport.svg',
     youtube: '/icons/youtube.svg',
-    applemusic: '/icons/applemusic.svg',
     tiktok: '/icons/tiktok.svg',
+    applemusic: '/icons/applemusic.svg',
     bandcamp: '/icons/bandcamp.svg',
     residentadvisor: '/icons/residentadvisor.svg'
   };
+
+  const bioLines = typeof artist.bio === 'string' ? artist.bio.split('\n') : [];
+  
 
   return (
     <Layout title={artist.name} description={`Booking & info for ${artist.name}`}>
@@ -32,8 +37,12 @@ export default function ArtistDetail({ artist }: { artist: any }) {
 
         <div className={styles.bioAndSocials}>
           <h1>{artist.name}</h1>
+          {/* Gestion des sauts de ligne sans innerHTML */}
           <div className={styles.bioBlock}>
-            <p>{artist.bio}</p>
+          {typeof artist.bio === 'string' &&
+            artist.bio.split('\n').map((line: string, i: number) => (
+              <p key={i}>{line}</p>
+          ))}
           </div>
 
           <div className={styles.socialLinks}>
@@ -49,15 +58,9 @@ export default function ArtistDetail({ artist }: { artist: any }) {
         </div>
 
         <div className={styles.embeds}>
-          {artist.spotifyEmbed && (
-            <div className={styles.embed} dangerouslySetInnerHTML={{ __html: artist.spotifyEmbed }} />
-          )}
-          {artist.soundcloudEmbed && (
-            <div className={styles.embed} dangerouslySetInnerHTML={{ __html: artist.soundcloudEmbed }} />
-          )}
-          {artist.youtubeEmbed && (
-            <div className={styles.embed} dangerouslySetInnerHTML={{ __html: artist.youtubeEmbed }} />
-          )}
+          {artist.youtubeEmbed && <Embed html={artist.youtubeEmbed} />}
+          {artist.spotifyEmbed && <Embed html={artist.spotifyEmbed} />}
+          {artist.soundcloudEmbed && <Embed html={artist.soundcloudEmbed} />}
         </div>
       </section>
 

@@ -2,8 +2,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 40px 20px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
   color: white;
@@ -12,7 +11,6 @@
 .topSection {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: flex-start;
 }
 
@@ -31,12 +29,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 20px;
 }
 
 .bioBlock {
   background: #111;
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
   font-size: 0.7rem;
   line-height: 1.6;
@@ -44,6 +41,7 @@
 }
 
 .socialLinks {
+  margin-top:20px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -123,6 +121,13 @@
 
 .bookingForm button:hover {
   background: #ddd;
+}
+
+.embeds {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
