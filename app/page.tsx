@@ -5,7 +5,6 @@ import Layout from './components/Layout';
 import styles from '../styles/Index.module.css';
 import ShotgunWidget from './components/ShotgunWidget';
 import InstagramSlider from './components/social/InstagramSlider';
-import InstagramFeed from './components/InstagramFeed';
 
 export default function Home() {
 
@@ -19,16 +18,16 @@ export default function Home() {
       </section>
 
       <section className={styles.section}>
-        <h1>Next Events</h1>
-        <section id="shotgun-events-listing" className={styles.nextEvents}></section>
-        <ShotgunWidget />
-      </section>
-
-      <section className={styles.section}>
         <h2>Latest News</h2>
         <div className={styles.instagramFeed}>
         <InstagramSlider />
         </div>
+      </section>
+
+      <section className={styles.section}>
+        <h1>Next Events</h1>
+        <section id="shotgun-events-listing" className={styles.nextEvents}></section>
+        <ShotgunWidget />
       </section>
 
       <section className={styles.section}>

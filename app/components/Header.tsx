@@ -40,14 +40,20 @@ export default function Header() {
         <a href="https://pleinphare.bandcamp.com/" target="_blank" rel="noopener noreferrer">
           <Image src="/icons/bandcamp.svg" alt="Bandcamp" width={24} height={24} />
         </a>
+        <a href="https://fr.ra.co/promoters/56957" target="_blank" rel="noopener noreferrer">
+          <Image src="/icons/residentadvisor.svg" alt="Resident Advisor" width={24} height={24} />
+        </a>
+        <a href="https://open.spotify.com/playlist/6ygo8syeHmD90ibYBtmrtU" target="_blank" rel="noopener noreferrer">
+          <Image src="/icons/spotify.svg" alt="Spotify" width={24} height={24} />
+        </a>
+        <a href="https://www.beatport.com/label/plein-phare-records/63450" target="_blank" rel="noopener noreferrer">
+          <Image src="/icons/beatport.svg" alt="Beatport" width={24} height={24} />
+        </a>
         <a href="https://soundcloud.com/pleinphare" target="_blank" rel="noopener noreferrer">
           <Image src="/icons/soundcloud.svg" alt="SoundCloud" width={24} height={24} />
         </a>
         <a href="https://www.tiktok.com/@pleinphareofficial" target="_blank" rel="noopener noreferrer">
           <Image src="/icons/tiktok.svg" alt="TikTok" width={24} height={24} />
-        </a>
-        <a href="https://open.spotify.com/playlist/6ygo8syeHmD90ibYBtmrtU" target="_blank" rel="noopener noreferrer">
-          <Image src="/icons/spotify.svg" alt="Spotify" width={24} height={24} />
         </a>
       </div>
     </header>
